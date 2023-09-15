@@ -1,1 +1,83 @@
-/*  css tool reset: hay librerias para resetear el css de nuestra web*/
+body{
+    background-color: #4B4952;
+    font-family: 'Poppins', sans-serif;;
+}
+
+header,footer{
+    text-align: center;
+    width: 40vw;
+    margin: 30px auto 30px auto;
+}
+
+main{
+    width: 40vw;
+    margin: 15px auto 15px auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #79717A;
+    border-radius: 15px;
+    padding: 40px;
+    -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    -moz-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    
+}
+form div{
+    display: flex;
+    flex-direction: column;
+
+}
+form div:last-child{
+    align-self: center;
+}
+label{
+    font-size: 18px;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 40px;
+    
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    border: none;
+    
+}
+input[type="submit"]:hover{
+    width: 200px;
+    height: 50px;
+    background-color:rgba(230,16,230,1);
+    font-weight: bold;
+    font-size: 20px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    border: none;
+    
+}
+select{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    height: 40px;
+    
+}
+
+label{
+    margin-bottom: 5px;
+}
+
