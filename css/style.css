@@ -1,6 +1,6 @@
 body{
-    background-color: #4B4952;
-    font-family: 'Poppins', sans-serif;;
+    /* background-color: #4B4952; */
+    font-family: 'Poppins', sans-serif;
 }
 
 header,footer{
@@ -10,7 +10,7 @@ header,footer{
 }
 
 main{
-    width: 40vw;
+    width: 300px;
     margin: 15px auto 15px auto;
 }
 
@@ -18,66 +18,69 @@ form{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    background-color: #79717A;
+    font-size: 18px;
+    /* background-color: #79717A;
     border-radius: 15px;
-    padding: 40px;
-    -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    padding: 40px; */
+    /* -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
     -moz-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
     box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
-    
-}
-form div{
-    display: flex;
-    flex-direction: column;
-
-}
-form div:last-child{
-    align-self: center;
+     */
 }
 label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+input{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    width: 236px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 200;
     font-size: 18px;
 }
-input{
-    font-family: 'Poppins', sans-serif;
+input[type="submit"]{
+    background-color: #fd0c49;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
     border-radius: 5px;
-    border: 1px solid grey;
-    height: 40px;
-    
 }
 
-input[type="submit"]{
-    width: 200px;
-    height: 50px;
-    background-color: aqua;
-    font-weight: bold;
-    font-size: 20px;
-    color: #f5f5f5;
-    border-radius: 5px;
-    border: none;
-    
-}
-input[type="submit"]:hover{
-    width: 200px;
-    height: 50px;
-    background-color:rgba(230,16,230,1);
-    font-weight: bold;
-    font-size: 20px;
-    color: #f5f5f5;
-    border-radius: 5px;
-    border: none;
-    
-}
 select{
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid grey;
-    background-color: white;
-    height: 40px;
-    
+    width: 100%;
+    border: 1px solid #ced4da ;
+    font-size: 18px;
+    font-weight: 100;  
+    background-color: #fff;
 }
 
-label{
-    margin-bottom: 5px;
+footer{
+    font-size: 100;
+}
+
+/*ids*/
+#nicka{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    width: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ced4da;
+    border: 1px solid #ced4da;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#mail{
+    width: 275px;
+    border-radius: 5px;
+    color: gray;
 }
 

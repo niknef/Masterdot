@@ -20,34 +20,23 @@
             
         <form action="">
             <div class="itemform">
-                <label for="nick">Introduce tu nombre: </label>
+                <label for="nick">Introduce tu Nick: </label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
                 <input type="text" name="nick" id="nick" required>
             </div>
-            <div class="itemform">
-                <label for="mail">Introduce tu Mail: </label>
-                <input type="email" name="mail" id="mail" size="30" required>
-            </div>
-            <div class="itemform">
-                <label for="age">Edad: </label>
-                <select name="age" id="age" required>
-                    <option value="">--Elige una edad--</option>
-                    <option value="menor">Menos de 18 años</option>
-                    <option value="mayor">Más de 18 años</option>
-                </select>
-            </div>
-            <div class="itemform">
-                <label for="plataform">Tamaño del Juego: </label>
-                <select name="plataform" id="plataform" required>
-                    <option value="">--Elige una consola--</option>
-                    <option value="play">Ps4</option>
-                    <option value="xbox">Xbox</option>
-                    <option value="pc">Pc</option>
-                    <option value="mobile">Mobile</option>
-                </select>
-            </div>
+
             <div>
-                <label for="juego">Juego más jugado: </label>
-                <input type="text" name="juego" id="juego">
+                <label for="mail">Correo electronico:</label>
+                <input type="email" name="mail" id="mail" value="yo@iam.es" required>
+            </div>
+            
+            <div class="itemform">
+                <label for="size">Tamaño del juego: </label>
+                <select name="size" id="size" required>
+                    <option value="">--Por favor elige un tamaño--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                </select>
             </div>
             <div class="itemform">
             
@@ -63,5 +52,3 @@
     </footer>      
 </body>
 </html>
-
-<!-- css-tricks.com -->
