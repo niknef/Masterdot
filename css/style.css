@@ -1,5 +1,5 @@
 body{
-    /* background-color: #4B4952; */
+    
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,13 +15,12 @@ main{
 }
 
 form{
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 20px;
     font-size: 18px;
-    /* background-color: #79717A;
-    border-radius: 15px;
-    padding: 40px; */
     /* -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
     -moz-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
     box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
@@ -43,18 +42,34 @@ input{
     font-weight: 200;
     font-size: 18px;
 }
-input[type="submit"]{
-    background-color: #fd0c49;
-    color: #fff;
-    font-weight: 200;
-    width: 100%;
-    border-radius: 5px;
+
+textarea:focus, input:focus, input:active, select:focus{  
+    border-color:rgba(230,16,230,1);
+    -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    -moz-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    outline: 0;
 }
 
+input[type="submit"]{
+    background-color: #fd0c49;
+    width: 150px;
+    color: #fff;
+    font-weight: 200;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color:rgba(230,16,230,1) ;
+    -webkit-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    -moz-box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+    box-shadow: 0px 0px 33px -16px rgba(230,16,230,1);
+}
 select{
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    width: 300px;
     border: 1px solid #ced4da ;
+    border-radius: 5px;
+    padding: 10px;
     font-size: 18px;
     font-weight: 100;  
     background-color: #fff;
@@ -79,8 +94,9 @@ footer{
 }
 
 #mail{
-    width: 275px;
+    width: 278px;
     border-radius: 5px;
     color: gray;
 }
+
 
