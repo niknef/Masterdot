@@ -1,5 +1,25 @@
-const nickInput = document.getElementById("nick");
+const nickInput=document.getElementById("nick");
+const sizeInput=document.getElementById("size");
+const formEntrada=document.getElementById("formEntrada");
+const error=document.getElementById("error");
 
-const emailInput = document.getElementById("mail");
+function comprobarForm(event){
+    
+    if(nickInput.value.match(/(?<!\s)[0-9]/))
+    {
+        nickInput.focus();
+        event.preventDefault();
+        error.innerText="El campo del nick no debe comenzar con un numero";
+        return false;
+        
+    }else if(sizeInput.value=="0"){
+        sizeInput.focus();
+        event.preventDefault();
+        error.innerText="Elije un tamaño por favor";
+        return false;
+    }
+    return true;
+    
+}
 
-const selectForm = document.getElementById("size");
+formEntrada.addEventListener('submit',comprobarForm);

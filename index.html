@@ -16,31 +16,37 @@
         <img src="./img/logo.png" alt="Logo MasterDot">
     </header>
     <!-- formulario de usuario -->
+        <p id="error"></p>
     <main>
        
-        <form action="">
+        <form action="juego.html" id="formEntrada">
             <div class="itemform">
-                <label for="nicka">Introduce tu Nick: </label>
+                <label for="nicka">Introduce tu Nick:* </label>
                 <input type="text" name="nicka" value="@" id="nicka" readonly>
-                <input type="text" name="nick" id="nick" required>
+                <input type="text" name="nick" id="nick" minlength="3" required>
             </div>
 
             <div>
                 <label for="mail">Correo electronico:</label>
-                <input type="email" name="mail" id="mail" value="yo@iam.es" required>
+                <input type="email" name="mail" id="mail" value="yo@iam.es"  >
             </div>
             
             <div class="itemform">
-                <label for="size">Tamaño del juego: </label>
-                <select name="size" id="size" required>
-                    <option value="">--Por favor elige un tamaño--</option>
+                <label for="size">Tamaño del juego:* </label>
+                <select name="size" id="size" required >
+                    <option value="0">--Por favor elige un tamaño--</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                    
                 </select>
             </div>
             <div class="itemform">
-            
-                <input type="submit" value="JUGAR">
+                <p>*Obligatorio</p>
+            </div>
+            <div class="itemform">
+                
+                <input type="submit" value="JUGAR" id="jugar">
 
             </div>
         </form>
