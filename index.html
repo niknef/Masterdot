@@ -11,52 +11,76 @@
     <title>Masterdot</title>
 </head>
 <body>
-    <!-- cabecera -->
-    <header>
-        <img src="./img/logo.png" alt="Logo MasterDot">
+     <!-- CABECERA -->
+     <header>
+        <img src="./img/logo.png" alt="Logo MasterDots">
     </header>
-    <!-- formulario de usuario -->
-        <p id="error"></p>
+    <!-- FORMULARIO USUARIO -->
     <main>
-       
+        <div>
+            <p id="error"></p>
+        </div>
         <form action="juego.html" id="formEntrada">
             <div class="itemform">
-                <label for="nicka">Introduce tu Nick:* </label>
-                <input type="text" name="nicka" value="@" id="nicka" readonly>
-                <input type="text" name="nick" id="nick" minlength="3" required>
+                <label for="nick">introduce tu nick*</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick" required minlength="2">
             </div>
-
-            <div>
-                <label for="mail">Correo electronico:</label>
-                <input type="email" name="mail" id="mail" value="yo@iam.es"  >
-            </div>
-            
             <div class="itemform">
-                <label for="size">Tamaño del juego:* </label>
-                <select name="size" id="size" required >
+                <label for="email">correo electrónico</label>
+                <input type="email" id="email" value="yo@iam.es">
+            </div>
+            <div class="itemform">
+                <label for="tamano">tamaño del juego*</label>
+                <select name="tamano" id="tamano" required>
                     <option value="0">--Por favor elige un tamaño--</option>
-                    <option value="1">4x4</option>
-                    <option value="2">5x5</option>
-                    <option value="3">6x6</option>
-                    
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
                 </select>
             </div>
             <div class="itemform">
-                <p>*Obligatorio</p>
+                <div id="avatar">
+                    <label for="avatar">avatar</label>
+                    <div id="avatarContainer">
+                        <img src="./img/avatar1.png" alt="" id="avatarImg">
+                    </div>
+                </div>
+                <div id="avatargrid">
+                    <div class="avatarItem">
+                        <img src="./img/avatar1.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/avatar2.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/avatar3.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/avatar4.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/avatar5.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/avatar6.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                </div>
             </div>
             <div class="itemform">
-                
+                <p>* Obligatorio</p>
+            </div>
+            <div class="itemform">
                 <input type="submit" value="JUGAR" id="jugar">
-
             </div>
         </form>
-    
     </main>
+    <!-- PIE DE PAGINA -->
     <footer>
-
-        <p>Curso FrontEnd de HTML, CSS Y JS</p>
-
-    </footer>    
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+    </footer>
+    <script src="./js/datosusuario.js"></script>
     <script src="./js/script.js"></script>  
+    
 </body>
 </html>
